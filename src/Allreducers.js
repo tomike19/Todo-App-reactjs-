@@ -1,9 +1,19 @@
-import React from 'react'
+import * as actiontypes from './redux/Todo/TodoActionTypes'
+import {fetchTodoStart,fetchTodoSuccess,fetchTodoFailed} from './redux/Todo/TodoReducer'
 
-export default function Allreducers() {
-  return (
-    <div>
-      
-    </div>
-  )
+
+
+const Allreducers = (state=initialState, action) => {
+ switch(action.type){
+   case actiontypes.FETCH_START:
+     return fetchTodoStart(state,action)
+
+     case actiontypes.FETCH_FAILED:
+       return fetchTodoFailed(state,action)
+
+       case actiontypes.FETCH_SUCCESS:
+         return fetchTodoSuccess (state,action)
+ }
 }
+
+export default Allreducers

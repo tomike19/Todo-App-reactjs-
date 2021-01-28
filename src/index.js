@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 
-const store = createStore(Allreducers);
+const store = createStore(Allreducers, window._REDUX_REVTOOLS_EXTENSION_ && window._REDUX_DEVTOOLS_EXTENSION_());
 
 ReactDOM.render(
   <React.StrictMode>
