@@ -3,13 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Allreducers from './Allreducers'
-import {createStore} from  'redux';
+import {createStore,compose,applyMiddleware} from  'redux';
+import thunk from 'redux-thunk';
 import {Provider} from 'react-redux'
 import reportWebVitals from './reportWebVitals';
 
+const composeEnhances = window._REDUX_DEVTOOLS_EXTENSION_COMPOSE_|| compose;
 
-
-const store = createStore(Allreducers, window._REDUX_REVTOOLS_EXTENSION_ && window._REDUX_DEVTOOLS_EXTENSION_());
+const store = createStore(Allreducers,composeEnhances(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <React.StrictMode>

@@ -3,7 +3,7 @@ import {fetchTodoStart,fetchTodoSuccess,fetchTodoFailed} from './redux/Todo/Todo
 
 
 
-const Allreducers = (state=initialState, action) => {
+const Allreducers = (state, action) => {
  switch(action.type){
    case actiontypes.FETCH_START:
      return fetchTodoStart(state,action)
