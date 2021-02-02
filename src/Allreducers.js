@@ -1,5 +1,5 @@
-import * as actiontypes from './redux/Todo/TodoActionTypes'
-import {fetchTodoStart,fetchTodoSuccess,fetchTodoFailed} from './redux/Todo/TodoReducer'
+import * as actiontypes from '../src/component/redux/Todo/TodoActionTypes'
+import {fetchTodoStart,fetchTodoSuccess,fetchTodoFailed} from '../src/component/redux/Todo/TodoReducer'
 
 
 

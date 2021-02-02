@@ -1,0 +1,11 @@
+//Landing page
+I am building a todo-app which is going to have a landing page. The landing page takes the navbar which includes home,sign-up page,log-in page. A picture that indicates the purpose of the app and a button the user get to click to take them to their Profile.
+
+//Next idea
+After clicking the button,the users should be able to see her profile name and picture and also on the page,they should be able to add their todos-task and also delete the unusable ones...For every task..there should be a timer that reminds them of the task that needs to be done.
+
+
+STEPS FOR LANDING PAGE
+1.Create the navbar with the colors chosen which must be mobile-responsive
+2.Routing...The pages must be able to link to each-other.
+

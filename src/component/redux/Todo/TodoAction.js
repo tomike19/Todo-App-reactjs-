@@ -13,7 +13,7 @@ export const fetchTodoStart  = () => {
   
 }
 
-const fetchTodoFailed = (error) => {
+export const fetchTodoFailed = (error) => {
   return{
     type: actiontypes.FETCH_FAILED,
     error : error

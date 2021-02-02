@@ -1,4 +1,4 @@
-import * as actiontypes from './TodoActionTypes'
+import * as actiontypes from '../Todo/TodoActionTypes'
 import {updatedObject} from './Todoutils'
 
 const INITIALSTATE = {
@@ -8,7 +8,7 @@ isLoading:false,
 }
 
 
-export const fetchTodoStart = (state,action)=> {
+export const fetchTodoStart = (state = INITIALSTATE,action)=> {
   return updatedObject (state,{
     error: null,
     isLoading : true,
@@ -19,7 +19,7 @@ export const fetchTodoStart = (state,action)=> {
 }
 
 
-export const fetchTodoSuccess = (state,action)=> {
+export const fetchTodoSuccess = (state = INITIALSTATE,action)=> {
   return updatedObject (state,{
     error: null,
     isLoading : true,
@@ -30,7 +30,7 @@ export const fetchTodoSuccess = (state,action)=> {
 }
 
 
- export const fetchTodoFailed = (state,action)=> {
+ export const fetchTodoFailed = (state = INITIALSTATE,action)=> {
   return updatedObject (state,{
     error: action.error,
     isLoading : false,

@@ -1,11 +1,13 @@
 import React from "react";
-import {connect} from 'react-redux'
+import './App.css'
+import Homepage from './component/homepage'
+
+
 
 function App() {
   return (
     <div className="App">
-      <h6>Hello world</h6>
-      <p>i'm learning redux</p>
+   <Homepage/>
     </div>
   );
 }
