@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import  Button from './Button';
-import Homepage from './homepage'
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -15,7 +14,7 @@ function Navbar() {
 
 
   return (
-    <>
+    <div className ="">
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
           APPTODO
@@ -46,8 +45,7 @@ function Navbar() {
         </ul>
         <Button />
       </nav>
-      <Homepage/>
-    </>
+    </div>
   );
 }
 

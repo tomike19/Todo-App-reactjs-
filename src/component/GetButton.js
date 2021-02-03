@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 import './Getbutton.css'
 
@@ -7,7 +7,7 @@ function CustomButton() {
   return (
     <div>
       <Link to =''>
-      <customButton className="outline-secondary btn">Secondary</customButton>{' '}
+      <Button variant="outline-secondary">Secondary</Button>{' '}
    </Link>
     </div>
   )

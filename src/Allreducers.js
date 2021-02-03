@@ -13,6 +13,9 @@ const Allreducers = (state, action) => {
 
        case actiontypes.FETCH_SUCCESS:
          return fetchTodoSuccess (state,action)
+         
+         default:
+           return state
  }
 }
 
