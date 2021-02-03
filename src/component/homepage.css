@@ -2,8 +2,12 @@ body{
   background-color: #e7e7de;
 }
 
-.dash-image{
-  float: right;
+.btnn1{
+ margin-left: 500px;
+ margin-top: 200px;
+ width: 200px;
+ height: 50px;
+ border-radius: 70px;
 }
 
 .todo{
