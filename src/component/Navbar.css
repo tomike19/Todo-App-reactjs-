@@ -7,7 +7,7 @@
 }
 
 .navbar-logo {
-  color: #fff;
+  color: #0a043c;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
@@ -38,7 +38,7 @@
 }
 
 .nav-links {
-  color: white;
+ 
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
@@ -50,7 +50,7 @@
 }
 
 .fa-bars {
-  color: #fff;
+  color: #0a043c;
 }
 
 .nav-links-mobile {

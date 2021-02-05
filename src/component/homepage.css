@@ -1,37 +1,60 @@
-body{
-  background-color: #e7e7de;
+.homepage{
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  height: 100vh;
+  
 }
 
-.btnn1{
- margin-left: 500px;
- margin-top: 200px;
- width: 200px;
- height: 50px;
- border-radius: 70px;
+.home-img{
+  margin-left: 80px;
+  float: left;
+  margin-bottom: 20px;
 }
 
-.todo{
-	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./images/todo.jpg');
-  background-size: cover;
-  min-height: 100vh;
+.homepage h1{
+  margin-top: 130px;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 60px;
+  color:#0a043c;
+  margin-right: 70px;
+  
+  
 }
 
-
-span{
+.get-started{
   text-align: center;
-  color: white;
-  position: relative;
-  top: 150px;
-  font-family: serif;
-  font-size: 20px;
-  color: #fff;
+position: relative;
+top: 30px;
+  padding: 0.5rem 5px 0.5rem 10px;
+  margin: 2rem 5rem;
+  border-radius: 4px;
+  width: 60%;
+  background:#0a043c;
+  text-decoration: none;
+  color:white;
+  font-size: 1.3rem;
+  
 }
 
 
 
-@media screen and(max-width:480px){
-  .text{
-    font-size: 10px;
-    color: black;
+/*media-query*/
+
+@media screen and (max-width: 480px) {
+  .home-img{
+    width: 80%;
+    position: relative;
+    right: 40px;
+  }
+
+  .homepage h1{
+    display: none;
+  }
+
+  .get-started{
+    text-align: center;
+   position: relative;
+   bottom: 100px;
+   left: 70px;
   }
 }
