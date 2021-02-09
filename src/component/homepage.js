@@ -10,8 +10,8 @@ function Homepage() {
       <div className="homepage">
              <Navbar/>
             <img src={todo} alt="" className="home-img"/>
-                <h1>MAKE MORE TIME FOR<br/> THE WORK THAT MATTERS MOST..</h1>
-                      <Link className="get-started" to ='/login'>
+                <h1>Never more in rush,Plan your day...</h1>
+                      <Link className="get-started" to ='/Login'>
                           Get Started 
                         </Link>
               </div> 
